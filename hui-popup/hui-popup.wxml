@@ -1,0 +1,7 @@
+<!--components/hui-popup.wxml-->
+<view>
+<view class="hui-popup-mask" bindtap="hide" wx:if="{{showStatus}}"></view>
+<view wx:if="{{showStatus}}"  class="{{mode=='default'?'hui-popup-top':mode=='middle'?'hui-popup-middle':mode=='bottom'?'hui-popup-bottom':''}}" style="width:{{_width}};height:{{_height}};background:{{_bgcolor}}" >
+ <slot></slot>
+</view>
+</view>
